@@ -1,15 +1,26 @@
-import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
+import React from 'react';
+import { useNavigate } from 'react-router';
 import "../../styles/home.css";
+import backgroundImg from '../../img/starwars.jpg';
 
-export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
-	</div>
-);
+const Home = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div className="text-center mt-5">
+      <div
+        className="my-5 bg"
+        style={{
+          backgroundImage: `url(${backgroundImg})`,
+          backgroundSize: 'cover', // Ajusta el tamaño de la imagen para cubrir el div
+          backgroundPosition: 'center', // Centra la imagen en el div
+          backgroundRepeat: 'no-repeat', // Evita que la imagen se repita
+          height: '800px',
+        }}
+      >
+      </div>
+    </div>
+  );
+};
+
+export default Home;

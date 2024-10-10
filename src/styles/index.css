@@ -1,3 +1,11 @@
+
 /* 
     General Styles
 */
+.star-wars-card {
+    color: aliceblue;
+    background-color: rgba(2, 14, 38, 0.7);
+    border: 2px solid #bca104;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000000;
+  }
